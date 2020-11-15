@@ -1,0 +1,18 @@
+server:
+  port: 8989
+  context-path: /springboot_day2
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  http:
+    multipart:
+      max-request-size: 2MB  #控制请求可以上传文件大小  默认值10M  单位MB
+      max-file-size:  4MB  #用来控制实际文件上传大小限制  默认值 1M 单位MB
+
+
+

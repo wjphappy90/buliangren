@@ -1,0 +1,30 @@
+User
+Student stu = new Student(); -> <bean ...> 
+
+复杂对象：
+Class.forName(...);
+Connection conn = DriverManager.getConnection(...);
+
+
+InputStream in = Resources.getResourceAsStream(...);
+SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(in);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

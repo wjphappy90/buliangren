@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--对移动设备进一步友好支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <!--水平表单-->
+                <form action="" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">用户名:</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">简介:</label>
+                        <div class="col-sm-10">
+                            <textarea name="description" class="form-control" cols="30" rows="3"></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">选择城市:</label>
+                        <div class="col-sm-10">
+                            <select name="" multiple class="form-control" id="">
+                                <option value="">北京</option>
+                                <option value="">天津</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">选择爱好:</label>
+                        <div class="col-sm-10">
+                            <!--垂直checkbox控件-->
+                           <!--<div class="checkbox">
+                                <label >
+                                    <input type="checkbox"> 看书
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label >
+                                    <input type="checkbox"> 电视
+                                </label>
+                            </div>
+                            <div class="checkbox disabled">
+                                <label>
+                                    <input type="checkbox" disabled> 唱歌
+                                    &lt;!&ndash;disabled表单不提交   readyonly 表单提交&ndash;&gt;
+                                </label>
+                            </div>-->
+
+                            <!--水平控件-->
+                            <label  class="checkbox-inline disabled">
+                                <input type="checkbox" disabled> 看书
+                            </label>
+                            <label  class="checkbox-inline">
+                                <input type="checkbox"> 唱歌
+                            </label>
+                            <label  class="checkbox-inline">
+                                <input type="checkbox"> 唱歌
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">选择性别:</label>
+                            <div class="col-sm-10">
+                                <!--垂直单选扭-->
+                              <!--  <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios"  value="option1" checked>
+                                        男
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios"  value="option1" checked>
+                                        女
+                                    </label>
+                                </div>-->
+                                <!--水平单选按钮-->
+                                <label class="radio-inline disabled">
+                                    <input type="radio" name="inlineRadioOptions"  disabled value="option1"> 男
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions"  value="option2"> 女
+                                </label>
+                            </div>
+                        </div>
+
+                        <!--静态控件-->
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">ID:</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">132604488484</p>
+                                <input type="text" name="id" class="form-control" value="132604488484" disabled>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <script src="../boot/js/jquery-3.4.1.min.js"></script>
+    <script src="../boot/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+
+            //调用方法
+            $("#btn").click(function(){
+
+                //注意:这个选择器写的是选项卡标题id
+                $("#profiles").tab('show');
+            })
+
+            $("#btn1").click(function(){
+
+                //注意:这个选择器写的是选项卡标题id
+                $("#homes").tab('show');
+            });
+
+
+
+            //事件使用
+            $("a[data-toggle='tab']").on('show.bs.tab',function(e){
+                console.log($(e.target).text()); // 切换到的新的选项卡
+                console.log($(e.relatedTarget).text()); // 切换之前的选项卡
+
+                //console.log("1");
+            });
+            $("a[data-toggle='tab']").on('shown.bs.tab',function(e){
+                console.log($(e.target).text()); // 切换到的新的选项卡
+                console.log($(e.relatedTarget).text()); // 切换之前的选项卡
+            });
+            $("a[data-toggle='tab']").on('hide.bs.tab',function(e){
+                console.log($(e.target).text()); // 切换到的新的选项卡
+                console.log($(e.relatedTarget).text()); // 切换之前的选项卡
+            });
+            $("a[data-toggle='tab']").on('hidden.bs.tab',function(e){
+                console.log($(e.target).text()); // 切换到的新的选项卡
+                console.log($(e.relatedTarget).text()); // 切换之前的选项卡
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+   <!--创建基本标签页实例-->
+   <ul class="nav nav-tabs">
+       <li class="active"><a href="#home" data-toggle="tab" id="homes">Home</a></li>
+       <li><a href="#profile" data-toggle="tab" id="profiles">Profile</a></li>
+   </ul>
+
+    <!--选项卡面板-->
+   <div class="tab-content">
+       <div class="tab-pane active" id="home">小黑这是好人</div>
+       <div class="tab-pane" id="profile">小三这也是好人</div>
+   </div>
+
+    <button class="btn btn-default" id="btn">展示指定profile面板</button>
+    <button class="btn btn-default" id="btn1">展示指定home面板</button>
+</body>
+</html>
+

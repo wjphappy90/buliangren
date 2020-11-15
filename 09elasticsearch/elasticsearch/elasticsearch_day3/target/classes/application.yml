@@ -1,0 +1,16 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /es_day3
+    jsp:
+      init-parameters:
+        development: true
+
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.220.3:9300,192.168.220.3:9301,192.168.220.3:9302
+      cluster-name: es  #指定集群名称
+
+
+

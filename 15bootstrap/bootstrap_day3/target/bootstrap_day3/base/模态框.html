@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <script src="../boot/js/jquery-3.4.1.min.js"></script>
+    <script src="../boot/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+
+            //调用属性
+            $("#myModal").modal({
+                show:true,//展示模态框
+                backdrop:'static',//静态模态框 点击模态框其他部分不关闭模态框
+                keyboard:false,//当按下esc时不关闭模态框
+            });
+
+
+            //调用额外方法
+            $("#btn").click(()=>{
+                $("#myModal").modal('toggle');//点击一次展示 再点击隐藏
+            });
+
+            $("#btn1").click(()=>{
+                $("#myModal").modal('toggle');
+            });
+
+            //处理事件
+            $("#myModal").on('show.bs.modal',function(){
+                console.log("1");
+                //ajax请求  查询数据   渲染数据
+            });
+            $("#myModal").on('shown.bs.modal',function(){
+                console.log("2");
+            });
+            $("#myModal").on('hide.bs.modal',function(){
+                console.log("3");
+            });
+            $("#myModal").on('hidden.bs.modal',function(){
+                console.log("4");
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!--创建模态框
+        注意: 1.千万不要在一个模态框上重叠另一个模态框。要想同时支持多个模态框，需要自己写额外的代码来实现
+             2.务必将模态框的 HTML 代码放在文档的最高层级内（也就是说，尽量作为 body 标签的直接子元素），以避免其他组件影响模态框的展现和/或功能。
+    -->
+    <div id="myModal" class="modal" tabindex="-1">
+
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <!--对话框标题-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">编辑用户</h4>
+                </div>
+                <!--对话框内容-->
+                <div class="modal-body">
+                   <!--设计表单-->
+                    <form action="" class="form-horizontal">
+
+                        <div class="form-group"><!--改变row-->
+                            <label for="" class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">@qq.com</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group"><!--改变row-->
+                            <label for="" class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">@qq.com</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group"><!--改变row-->
+                            <label for="" class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">@qq.com</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group"><!--改变row-->
+                            <label for="" class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">@qq.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" id="btn1">隐藏模态框</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <button class="btn btn-default" id="btn">显示模态框</button>
+
+
+</body>
+</html>
+

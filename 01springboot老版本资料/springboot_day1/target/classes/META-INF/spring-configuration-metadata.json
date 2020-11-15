@@ -1,0 +1,37 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.baizhi.entity.User",
+      "name": "user",
+      "type": "com.baizhi.entity.User"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.baizhi.entity.User",
+      "name": "user.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.baizhi.entity.User",
+      "name": "user.bir",
+      "type": "java.util.Date"
+    },
+    {
+      "sourceType": "com.baizhi.entity.User",
+      "name": "user.id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.baizhi.entity.User",
+      "name": "user.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "com.baizhi.entity.User",
+      "name": "user.namea",
+      "type": "java.lang.String"
+    }
+  ]
+}

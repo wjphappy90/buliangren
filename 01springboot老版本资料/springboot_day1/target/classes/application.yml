@@ -1,0 +1,31 @@
+server:
+  context-path:  /ems  # 配置应用名
+
+spring:
+  profiles:
+    active:  prod # 激活测试配置
+  mvc:
+    view:
+      prefix:  /  # 配置前缀
+      suffix: .jsp #配置后缀
+
+
+id: 21
+name: 小白
+names: xiaohei
+age: 23
+bir: 2012/12/12
+price: 23.23
+qqs: xiaohei,xiaoming,xiaobaibai
+strs: abc,xiaosan,bcd
+maps: "{driver: 'com.mysql.jdbc.Driver', url: 'jdbc:mysql://localhost:3306/test'}"
+
+user:
+  namea: 小黑
+  age: 23
+  bir: 2012/11/11
+  id: xxx
+  maps:
+    aaa: xiaohei
+
+

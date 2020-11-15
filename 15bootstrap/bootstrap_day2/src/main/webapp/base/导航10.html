@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <!--核心jquery js-->
+    <script src="../boot/js/jquery-3.4.1.min.js"></script>
+    <!--bootstrap 核心 js-->
+    <script src="../boot/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+    <!--基本导航 nav 标签也 nav-tabs-->
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Data</a></li>
+    </ul>
+
+    <br><br><br>
+
+    <!--胶囊式标签pills-->
+    <ul class="nav nav-pills">
+        <li ><a href="">Home</a></li>
+        <li class="active"><a href="">Profile</a></li>
+        <li><a href="">Data</a></li>
+    </ul>
+    <br><br><br>
+    <!--垂直胶囊-->
+    <ul class="nav nav-pills nav-stacked">
+        <li ><a href="">Home</a></li>
+        <li class="active"><a href="">Profile</a></li>
+        <li><a href="">Data</a></li>
+    </ul>
+
+    <!--两端对齐标签页-->
+    <div class="row">
+        <div class="col-sm-6">
+            <!--自适应父容器宽度 nav-justified-->
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="">Home</a></li>
+                <li class="disabled"><a href="">Profile</a></li>
+                <li><a href="">Data</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--基本导航中添加下拉菜单-->
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <!--下拉菜单-->
+        <li class="dropdown">
+            <a data-toggle="dropdown">点我选择 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li>Spring</li>
+                <li>SpringMVC</li>
+            </ul>
+        </li>
+    </ul>
+    <br><br><br>
+    <!--胶囊式标签也添加下拉菜单-->
+    <ul class="nav nav-pills">
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <!--下拉菜单-->
+        <li class="dropdown">
+            <a data-toggle="dropdown">点我选择 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li>Spring</li>
+                <li>SpringMVC</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
